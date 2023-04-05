@@ -1,20 +1,16 @@
 ## Source:
-https://www.kaggle.com/code/gargmanish/basic-machine-learning-with-cancer/notebook
+https://www.kaggle.com/datasets/xiaotawkaggle/inhibitors
 
 ## Feature Description
-1) ID number
-2) Diagnosis (M = malignant, B = benign)
-3) Ten real-valued features are computed for each cell nucleus:
-    - radius (mean of distances from center to points on the perimeter)
-    - texture (standard deviation of gray-scale values)
-    - perimeter
-    - area
-    - smoothness (local variation in radius lengths)
-    - compactness (perimeter^2 / area - 1.0)
-    - concavity (severity of concave portions of the contour) 
-    - concave points (number of concave portions of the contour)
-    - symmetry
-    - fractal dimension ("coastline approximation" - 1)
+It was reported that an estimated 4292,000 new cancer cases and 2814,000 cancer deaths would occur in China in 2015. [Chen, W., etc. (2016), Cancer statistics in China, 2015.]
 
-Here 3~32 are divided into three parts first is Mean (3-13), Stranded Error(13-23) and Worst(23-32) and each contain 10 parameter (radius, texture,area, perimeter, smoothness,compactness,concavity,concave points,symmetry and fractal dimension)
-- Here Mean means the means of the all cells, standard Error of all cell and worst means the worst cell
+Small molecules play an non-trivial role in cancer chemotherapy. Here I focus on inhibitors of 8 protein kinases(name: abbr):
+- Cyclin-dependent kinase 2: cdk2
+- Epidermal growth factor receptor erbB1: egfr_erbB1
+- Glycogen synthase kinase-3 beta: gsk3b
+- Hepatocyte growth factor receptor: hgfr
+- MAP kinase p38 alpha: map_k_p38a
+- Tyrosine-protein kinase LCK: tpk_lck
+- Tyrosine-protein kinase SRC: tpk_src
+- Vascular endothelial growth factor receptor 2: vegfr2
+For each protein kinase, several thousand inhibitors are collected from chembl database, in which molecules with IC50 lower than 10 uM are usually considered as inhibitors, otherwise non-inhibitors.
